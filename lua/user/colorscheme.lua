@@ -1,8 +1,5 @@
-vim.cmd [[
-try
-  colorscheme darkplus
-catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default
-  set background=dark
-endtry
-]]
+-- Lua
+require('onedark').setup {
+    style = 'warmer'
+}
+require('onedark').load()
